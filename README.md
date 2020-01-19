@@ -3,6 +3,7 @@
 Strongly typed input components for React.
 
 [![npm](https://img.shields.io/npm/v/react-typed-inputs)](https://www.npmjs.com/package/react-typed-inputs)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/kripod/react-typed-inputs.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kripod/react-typed-inputs/context:javascript)
 [![Travis (.com)](https://img.shields.io/travis/com/kripod/react-typed-inputs)](https://travis-ci.com/kripod/react-typed-inputs)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://commitizen.github.io/cz-cli/)
 
