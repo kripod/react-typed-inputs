@@ -30,13 +30,15 @@ This happens because the empty input value gets converted to `0` by `Number('')`
 
 New issues arise when introducing `null` for intentionally missing values (in place of `''` or `NaN`). Although a special `valueAsNumber` attribute exists, it does not support the culture-independent decimal point (`.`) in all browsers.
 
+_A [live demo](https://codesandbox.io/s/react-typed-inputs-demo-q22d7) is available for demonstrating the differences between prior approaches._
+
 ## 📚 Usage
 
 Import one of the components as documented below.
 
 - Use `onValueChange` instead of `onChange`. (Behavior of the latter is kept intact in all cases.)
 - Controlled components accept `null` as their `value`, denoting an empty field.
-- Uncontrolled components support all the outlined behavioral additions.
+- Uncontrolled components support all the described behavioral additions.
 
 Enjoy the benefits of type annotations and tree shaking out of the box.
 
