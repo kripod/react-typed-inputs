@@ -26,7 +26,9 @@ function Form() {
 }
 ```
 
-This happens because the empty input value gets converted to `0` by `Number('')`. Checking for edge cases would make the code difficult to reason about. Also, new issues arise when introducing `null` for intentionally missing values (in place of `''`).
+This happens because the empty input value gets converted to `0` by `Number('')`. Checking for edge cases would make the code difficult to reason about.
+
+New issues arise when introducing `null` for intentionally missing values (in place of `''` or `NaN`). Although a special `valueAsNumber` attribute exists, it does not support the culture-independent decimal point (`.`) in all browsers.
 
 ## 📚 Usage
 
