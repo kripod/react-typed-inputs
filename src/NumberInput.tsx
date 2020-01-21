@@ -84,7 +84,7 @@ export const NumberInput = React.forwardRef(
         type="number"
         pattern={inputMode === 'numeric' ? '\\d*' : undefined} // iOS fallback
         inputMode={inputMode}
-        value={innerValue}
+        value={value !== undefined ? innerValue : value} // Support uncontrolled
         min={min}
         max={max}
         step={step}
