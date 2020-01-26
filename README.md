@@ -61,6 +61,7 @@ function Form() {
 ##### Overridable defaults
 
 - `type`: Equals `"number"`.
+  - Tip: Use `"text"` in combination with custom increment/decrement controls. Typing a decimal point doesn’t nullify the value in that case.
 - `inputMode`: Set to one of the following only when `min >= 0`, as devices may not show a minus key (`-`).
   - `"numeric"`: When `step` is an integer, which is true unless overrided.
   - `"decimal"`: When `step` is not an integer.
