@@ -30,7 +30,7 @@ This happens because the empty input value gets converted to `0` by `Number('')`
 
 New issues arise when introducing `null` for intentionally missing values (in place of `''` or `NaN`). Although a special `valueAsNumber` attribute exists, it does not support the culture-independent decimal point (`.`) in all browsers.
 
-_A [live demo](https://codesandbox.io/s/react-typed-inputs-demo-q22d7) is available for demonstrating the differences between prior approaches._
+_A [live demo](https://codesandbox.io/s/react-typed-inputs-demo-kkf27) is available for demonstrating the differences between prior approaches._
 
 ## 📚 Usage
 
