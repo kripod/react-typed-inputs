@@ -42,7 +42,13 @@ export const NumericInput = React.forwardRef(
     // Propagate changes of `value` to `innerValue`
     useEffect(() => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      if (!Number.isNaN(value as any)) setInnerValue(toInner(value));
+      if (!Number.isNaN(value as any))
+        setInnerValue((prevInnerValue) => {
+          // Prevent rewriting input e.g. when 42. -> 42.. (NaN) -> 42. is typed
+          return value !== toOuter(prevInnerValue)
+            ? toInner(value)
+            : prevInnerValue;
+        });
     }, [value]);
 
     function handleEvent<T extends React.SyntheticEvent>(
