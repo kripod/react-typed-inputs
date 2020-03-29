@@ -42,15 +42,15 @@ Import one of the components as documented below.
 
 Enjoy the benefits of type annotations and tree shaking out of the box.
 
-### `<NumberInput>`
+### `<NumericInput>`
 
 ```jsx
 import React, { useState } from 'react';
-import { NumberInput } from 'react-typed-inputs';
+import { NumericInput } from 'react-typed-inputs';
 
 function Form() {
   const [value, setValue] = useState(42);
-  return <NumberInput value={value} onValueChange={setValue} />;
+  return <NumericInput value={value} onValueChange={setValue} />;
 }
 ```
 

@@ -10,7 +10,7 @@ function toOuter(value: string): number | null {
   return value ? Number(value) : null;
 }
 
-export interface NumberInputProps
+export interface NumericInputProps
   extends Omit<React.PropsWithoutRef<JSX.IntrinsicElements['input']>, 'value'> {
   value?: number | null;
   min?: number;
@@ -21,7 +21,7 @@ export interface NumberInputProps
   onValueChange?: (value: number | null) => void;
 }
 
-export const NumberInput = React.forwardRef(
+export const NumericInput = React.forwardRef(
   (
     {
       value,
@@ -34,7 +34,7 @@ export const NumberInput = React.forwardRef(
       onChange,
       onBlur,
       ...props
-    }: NumberInputProps,
+    }: NumericInputProps,
     ref: React.Ref<HTMLInputElement>,
   ) => {
     const [innerValue, setInnerValue] = useState(toInner(value));
