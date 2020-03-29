@@ -9,21 +9,48 @@
     "typed"
   ],
   "homepage": "https://github.com/kripod/react-typed-inputs#readme",
-  "bugs": {
-    "url": "https://github.com/kripod/react-typed-inputs/issues"
-  },
+  "bugs": "https://github.com/kripod/react-typed-inputs/issues",
   "repository": "github:kripod/react-typed-inputs",
   "license": "MIT",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
   "scripts": {
     "build": "pika build",
     "commit": "git-cz",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,js,json,yml,md}\"",
+    "format": "prettier --ignore-path .gitignore --write .",
     "lint": "eslint --ignore-path .gitignore \"**/*.{ts,tsx,js}\"",
     "publish": "cd ./pkg/ && yarn publish --non-interactive",
     "release": "standard-version",
-    "type-check": "tsc --noEmit",
-    "version": "npm run build"
+    "type-check": "tsc --noEmit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "scope-case": [
+        2,
+        "always",
+        [
+          "camel-case",
+          "pascal-case"
+        ]
+      ]
+    }
+  },
+  "lint-staged": {
+    "*": "prettier --write",
+    "*.{ts,tsx,js}": "eslint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
