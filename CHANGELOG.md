@@ -8,8 +8,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 - rename NumberInput to NumericInput
 - change default input type to "text"
-- **deps:** update, use TypeScript >=3.8
-
 - **deps:** update, use TypeScript >=3.8 ([b1c86cc](https://github.com/kripod/react-typed-inputs/commit/b1c86ccefefecba639ffad530439b121d71edcfc))
 
 ### improvement
