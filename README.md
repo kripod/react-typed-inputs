@@ -44,8 +44,6 @@ Enjoy the benefits of type annotations and tree shaking out of the box.
 
 ### `<NumberInput>`
 
-_Supersedes `<input type="number">`._
-
 ```jsx
 import React, { useState } from 'react';
 import { NumberInput } from 'react-typed-inputs';
@@ -60,8 +58,9 @@ function Form() {
 
 ##### Overridable defaults
 
-- `type`: Equals `"number"`.
-  - Tip: Use `"text"` in combination with custom increment/decrement controls. Typing a decimal point doesn’t nullify the value in that case.
+- `type`: Equals `"text"`.
+  - Using `"number"` is [not recommended](https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/).
+  - Typing a decimal point doesn’t nullify the value by default.
 - `inputMode`: Set to one of the following only when `min >= 0`, as devices may not show a minus key (`-`).
   - `"numeric"`: When `step` is an integer, which is true unless overrided.
   - `"decimal"`: When `step` is not an integer.

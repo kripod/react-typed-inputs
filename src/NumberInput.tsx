@@ -81,7 +81,6 @@ export const NumberInput = React.forwardRef(
     return (
       <input
         ref={ref}
-        type="number"
         pattern={inputMode === 'numeric' ? '\\d*' : undefined} // iOS fallback
         inputMode={inputMode}
         value={value !== undefined ? innerValue : value} // Support uncontrolled
