@@ -41,4 +41,4 @@ As a collaborator, you agree to license your contributions under the project's [
 [prettier]: https://prettier.io/
 [airbnb javascript style guide]: https://github.com/airbnb/javascript
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
-[referencing corresponding issues]: https://help.github.com/en/articles/closing-issues-using-keywords
+[referencing corresponding issues]: https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
