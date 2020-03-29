@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/kripod/react-typed-inputs/compare/v2.0.0...v2.0.1) (2020-03-29)
+
+### Bug Fixes
+
+- **NumericInput:** prevent setting text to NaN ([085f566](https://github.com/kripod/react-typed-inputs/commit/085f5667989e3025ee1467cb9d229bfbf32ec10a))
+
 ## [2.0.0](https://github.com/kripod/react-typed-inputs/compare/v1.0.3...v2.0.0) (2020-03-29)
 
 ### ⚠ BREAKING CHANGES
