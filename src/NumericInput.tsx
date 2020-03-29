@@ -41,9 +41,8 @@ export const NumericInput = React.forwardRef(
 
     // Propagate changes of `value` to `innerValue`
     useEffect(() => {
-      setInnerValue(toInner(value));
-      // Ignore `innerValue` changes to prevent locking into a state forever
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      if (!Number.isNaN(value as any)) setInnerValue(toInner(value));
     }, [value]);
 
     function handleEvent<T extends React.SyntheticEvent>(
@@ -54,10 +53,10 @@ export const NumericInput = React.forwardRef(
     ): void {
       // Allow base callback to cancel the handler below
       baseCallack?.(event);
+      let nextValue = toOuter(nextInnerValue);
       if (event.defaultPrevented) return;
 
-      let nextValue = toOuter(nextInnerValue);
-      if (transformValue && nextValue != null) {
+      if (transformValue && nextValue != null && !Number.isNaN(nextValue)) {
         nextValue = transformValue(nextValue);
         setInnerValue(toInner(nextValue));
       } else {
