@@ -20,7 +20,7 @@ function Form() {
     <input
       type="number"
       value={value}
-      onChange={event => setValue(Number(event.currentTarget.value))}
+      onChange={(event) => setValue(Number(event.currentTarget.value))}
     />
   );
 }

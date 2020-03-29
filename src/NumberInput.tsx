@@ -92,7 +92,7 @@ export const NumberInput = React.forwardRef(
           handleEvent(onChange, event, event.currentTarget.value);
         }}
         onBlur={(event): void => {
-          handleEvent(onBlur, event, innerValue, nextValue => {
+          handleEvent(onBlur, event, innerValue, (nextValue) => {
             /* eslint-disable no-param-reassign */
             if (clampAfterBlur) {
               nextValue = clamp(nextValue, min, max);

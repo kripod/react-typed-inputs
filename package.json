@@ -15,7 +15,6 @@
   "repository": "github:kripod/react-typed-inputs",
   "license": "MIT",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
-  "main": "lib/index.js",
   "scripts": {
     "build": "pika build",
     "commit": "git-cz",
@@ -31,30 +30,30 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt": "^8.3.5",
     "@pika/pack": "^0.5.0",
-    "@pika/plugin-build-node": "^0.8.1",
-    "@pika/plugin-build-web": "^0.8.1",
-    "@pika/plugin-ts-standard-pkg": "^0.8.1",
-    "@types/react": "^16.9.19",
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
+    "@pika/plugin-build-node": "^0.8.3",
+    "@pika/plugin-build-web": "^0.8.3",
+    "@pika/plugin-ts-standard-pkg": "^0.8.3",
+    "@types/react": "^16.9.27",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
     "commitizen": "^4.0.3",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-typescript": "^6.3.1",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-config-airbnb-typescript": "^7.2.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "eslint-plugin-simple-import-sort": "^5.0.1",
-    "husky": "^4.2.1",
-    "lint-staged": "^10.0.2",
-    "prettier": "^1.19.1",
-    "prettier-plugin-packagejson": "^2.0.10",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9",
+    "prettier": "^2.0.2",
+    "prettier-plugin-packagejson": "^2.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "standard-version": "^7.1.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "react": "^16.8.0"
@@ -65,10 +64,10 @@
         "@pika/plugin-ts-standard-pkg"
       ],
       [
-        "@pika/plugin-build-web"
+        "@pika/plugin-build-node"
       ],
       [
-        "@pika/plugin-build-node"
+        "@pika/plugin-build-web"
       ]
     ]
   }
