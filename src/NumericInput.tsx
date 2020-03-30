@@ -11,7 +11,7 @@ function toOuter(value: string): number | null {
 }
 
 export interface NumericInputProps
-  extends Omit<React.PropsWithoutRef<JSX.IntrinsicElements['input']>, 'value'> {
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'value'> {
   value?: number | null;
   min?: number;
   max?: number;
