@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.0.4](https://github.com/kripod/react-typed-inputs/compare/v2.0.3...v2.0.4) (2020-04-15)
 
+### Performance Improvements
+
+- optimize bundled output ([e7f02a5](https://github.com/kripod/react-typed-inputs/commit/e7f02a5b4377944addeda67062527569d7ba4f85))
+
 ### [2.0.3](https://github.com/kripod/react-typed-inputs/compare/v2.0.2...v2.0.3) (2020-03-30)
 
 ### [2.0.2](https://github.com/kripod/react-typed-inputs/compare/v2.0.1...v2.0.2) (2020-03-29)
