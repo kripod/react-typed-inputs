@@ -12,7 +12,7 @@ Strongly typed input components for React.
 HTML form elements keep their internal state as strings. While the variable below retains its numeric type, it cannot be cleared by the user.
 
 ```jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function Form() {
   const [value, setValue] = useState(42);
@@ -45,7 +45,7 @@ Enjoy the benefits of type annotations and tree shaking out of the box.
 ### `<NumericInput>`
 
 ```jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NumericInput } from 'react-typed-inputs';
 
 function Form() {
