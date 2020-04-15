@@ -59,7 +59,7 @@ export const NumericInput = React.forwardRef(
       transformValue?: (value: number) => number,
     ): void {
       // Allow base callback to cancel the handler below
-      baseCallack?.(event);
+      if (baseCallack) baseCallack(event);
       let nextValue = toOuter(nextInnerValue);
       if (event.defaultPrevented) return;
 
@@ -72,8 +72,8 @@ export const NumericInput = React.forwardRef(
       }
 
       // Prevent false positive event triggering
-      if (nextValue !== toOuter(innerValue)) {
-        onValueChange?.(nextValue);
+      if (onValueChange && nextValue !== toOuter(innerValue)) {
+        onValueChange(nextValue);
       }
     }
 
