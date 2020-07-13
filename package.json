@@ -78,7 +78,7 @@
     "prettier-plugin-packagejson": "^2.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
